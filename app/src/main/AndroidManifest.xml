@@ -17,6 +17,12 @@
         </activity>
 
         <activity android:name=".activity.EditActivity"/>
+        <activity android:name=".clock.AlarmDialog"/>
+
+        <receiver android:name=".clock.ClockReceiver"/>
     </application>
 
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
 </manifest>
